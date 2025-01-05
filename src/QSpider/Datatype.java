@@ -55,19 +55,9 @@ public class Datatype {
             System.out.print(num + " ");
         }
         System.out.println();
-
-        // Class: A user-defined data type
-        MyClass obj = new MyClass();
-        obj.displayMessage();
     }
 }
 
-// A user-defined class example
-class MyClass {
-    void displayMessage() {
-        System.out.println("This is a user-defined class.");
-    }
-}
 
 
 // Output

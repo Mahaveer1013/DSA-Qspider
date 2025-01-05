@@ -7,11 +7,12 @@ public class NumberRev {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter data: ");
         int num = scanner.nextInt();
-        int ans = 0;
-        while(num>0){
-            ans = (ans*10) + (num%10);
-            num/=10;
-        }
-        System.out.println("Answer: "+ans);
+//        int ans = 0;
+//        while(num>0){
+//            ans = (ans*10) + (num%10);
+//            num/=10;
+//        }
+//        System.out.println("Answer: "+ans);
+        System.out.println("Answer: "+NumberPattern.revNum(num));
     }
 }
