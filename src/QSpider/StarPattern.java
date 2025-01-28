@@ -13,7 +13,9 @@ public class StarPattern {
 //        numberStar();
 //        pyramid();
 //        reversePyramid();
-        pyramidSquares();
+//        pyramidSquares();
+//        centerGapTriangle();
+        rightTriangleAlphabet();
     }
 
 
@@ -48,6 +50,37 @@ public class StarPattern {
                     System.out.print("   ");
                 }
             }
+            System.out.println();
+        }
+    }
+
+    public static void rightTriangleAlphabet() {
+        int alp = 65;
+        int count = 5;
+        for (int i = 1; i <= count; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print((char) alp + "  ");
+                alp++;
+            }
+            alp = 65;
+            System.out.println();
+        }
+    }
+
+
+    public static void centerGapTriangle() {
+        int count = 7;
+        int num = (count / 2); // 3
+        for (int i = 1; i <= count; i++) {
+            for (int j = 1; j <= count; j++) {
+                if ((j <= num && num != 0) || j > count - num) {
+                    System.out.print("*  ");
+                } else {
+                    System.out.print("   ");
+                }
+            }
+            if (i <= count / 2) num--;
+            else num++;
             System.out.println();
         }
     }
@@ -100,7 +133,7 @@ public class StarPattern {
         for (int i = 1; i <= count; i++) {
             for (int j = 1; j <= (2 * count) - 1; j++) {
                 if (i + j >= count + 1 && j <= count + i - 1) {
-                    System.out.print(num*num + "  ");
+                    System.out.print(num * num + "  ");
                 } else {
                     System.out.print("   ");
                 }
